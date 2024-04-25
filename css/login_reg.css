@@ -24,7 +24,7 @@ body {
      background: var(--bg-form);
      border-radius: 5%;
      width: 500px;
-     height: 450px;
+     height:500px;
 }
 input {
      font-size: 30px;
@@ -70,6 +70,10 @@ input {
     justify-content: flex-end;
 }
 .registro a{
-    margin:20px;
+    margin:15px;
     font-size:medium; 
+}
+.user_error{
+     color:red;
+     font-size: small;
 }
