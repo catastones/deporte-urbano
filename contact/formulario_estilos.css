@@ -1,0 +1,364 @@
+/** FORMATO DE PAGINA DE CONTACTO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6eef8;
+}
+/* Estilos del contenedor del menú de navegación */
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    background-color: #6199cf;
+}
+
+.logo {
+    margin: 10px;
+    align-content: center;
+    width: 130px;
+}
+
+.logoContainer {
+    justify-items: center;
+}
+
+.header-menubar {
+    margin-left: 1rem;
+}
+
+.menubar {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+li {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cartContainer img {
+    margin-top: 15px;
+    width: 30px;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #8b89f7;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+/*Estilo del main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.seccionmensaje {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin-top: 10px;
+    font-size: x-large;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido-inferior {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto {
+    background: url("./imagenes/mujer.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
+    background-position: right center; /* Alinea la imagen al lado derecho */
+    background-color: white; /* Fondo blanco para las áreas no cubiertas por la imagen */
+    width: 100%; /* Ajuste de ancho opcional, según tus necesidades */
+    height: 100%; /* Ajuste de altura opcional, según tus necesidades */
+}
+
+@media (max-width: 600px) {
+    .elemento {
+        height: 30vh; /* Reducir la altura en dispositivos más pequeños */
+    }
+}
+
+.seccionformulario {
+    background-color: #7acf9b;
+}
+.seccionformulario,.contacto {
+    flex: 1 1 100%;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: large;
+    border: 2px solid silver;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    margin: 10px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-style: bold;
+    font-size: xx-large;
+}
+
+.telefono {
+    font-style: bold;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mail { 
+    font-style: bold;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Estilos base para el contenedor */
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: row; /* Alinea elementos horizontalmente */
+    justify-content: space-around; /* Distribuye espacio uniformemente */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    flex-wrap: wrap; /* Permite envolver los elementos si no hay espacio suficiente */
+}
+
+/* Estilos para las imágenes */
+.contenedor-imagenes img {
+    width: auto; /* Mantiene la anchura original de la imagen */
+    max-width: 45%; /* Limita el ancho máximo de cada imagen para evitar sobredimensionamiento */
+    height: auto; /* Asegura que la altura sea automática para mantener la proporción */
+    margin: 10px; /* Añade un margen para un poco de espacio entre las imágenes */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .contenedor-imagenes {
+        flex-direction: column; /* Alinea los elementos verticalmente en pantallas pequeñas */
+    }
+
+    .contenedor-imagenes img {
+        max-width: 100%; /* Permite que cada imagen ocupe todo el ancho del contenedor */
+        margin: 5px 0; /* Ajusta los márgenes para pantallas pequeñas */
+    }
+}
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.horario-contacto {
+    list-style: none;
+    padding: 0;
+}
+
+
+.formulario label {
+        display: block; /* Hace que cada etiqueta ocupe su propia línea */
+        margin-bottom: 8px; /* Añade margen debajo de cada etiqueta */
+        color: #333; /* Establece un color de texto oscuro para mejorar la legibilidad */
+        font-size: 16px; /* Ajusta el tamaño de la fuente para una lectura cómoda */
+        font-weight: bold; /* Opcional: hace que la etiqueta sea en negrita */
+    
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.formulario button {
+    width: 50%; /* Reduce el tamaño del botón a la mitad del ancho de su contenedor */
+    padding: 10px; /* Espacio interior para mejorar la legibilidad y el confort al hacer clic */
+    background-color: #398f3c; /* Color de fondo verde */
+    color: white; /* Color de texto blanco para alto contraste */
+    border: 2px; /* No border por defecto */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    cursor: pointer; /* Cursor indica que es clickable */
+    margin: 10px auto; /* Margen superior e inferior de 10px y centrado horizontalmente */
+    display: block; /* Hace que el botón sea un bloque, necesario para centrar con 'auto' */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para hover */
+}
+
+.formulario button:hover {
+    background-color: #7db880; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más prominente al pasar el ratón */
+}
+
+
+.formulario textarea {
+    width: 100%; 
+    height: 200px;
+    min-height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 768px) {
+    .formulario label {
+        flex-basis: 25%; /* El label usa el 25% del ancho disponible */
+    }
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+        flex-basis: 70%; /* Los inputs y textarea usan el 70% del ancho disponible */
+    }
+
+    .contenido-inferior {
+        flex-direction: row; /* Mantiene los elementos lado a lado en pantallas grandes */
+    }
+}
+
+@media (max-width: 768px) {
+    .contenido-inferior {
+        flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+    }
+}
+
+
+/* Estilos base del footer */
+footer {
+    background-color: #a7d2dd;
+    width: 100%;
+    padding: 20px 5%; /* Padding relativo */
+}
+
+.footer-item-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin-bottom: 20px; /* Agregar un margen para separar los elementos */
+}
+
+.footer-item {
+    flex: 1 1 200px; /* Flex grow, shrink y base size */
+    margin: 10px; /* Margen para evitar solapamiento */
+    text-align: center; /* Centrar contenido */
+}
+
+.footer-item h3 {
+    font-size: 16px; /* Tamaño de fuente adaptable con rem o em */
+}
+
+.footer-item ul {
+    list-style: none; 
+}
+
+.footer-item li {
+    line-height: 1.5; /* Mejorar la legibilidad */
+}
+
+.footer-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem; /* Uso de rem para adaptabilidad */
+}
+
+.footer-item a:hover {
+    color: rgb(86, 131, 187);
+}
+
+.fa-brands {
+    font-size: 20px;
+    letter-spacing: 15px; /* Espaciado entre íconos */
+    display: block; /* Asegura que íconos están en su propia línea si es necesario */
+}
+
+.contac-link {
+    font-size: 1.25rem; /* Tamaño de fuente más grande para accesibilidad */
+}
+
+address {
+    background-color: #e7f8f8c1;
+    width: 100%;
+    padding: 10px 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 2%;
+    }
+
+    .footer-item-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item {
+        margin-bottom: 10px; /* Más espacio entre elementos */
+    }
+
+    .fa-brands {
+        letter-spacing: 10px; /* Ajustar el espaciado entre íconos */
+    }
+
+    address {
+        font-size: 0.8rem; /* Texto más pequeño para pantallas pequeñas */
+    }
+}
