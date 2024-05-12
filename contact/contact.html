@@ -1,4 +1,4 @@
-<!-- @format -->
+<!-- pagina contacto -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -24,24 +24,24 @@
                     </ul>
                 </div>
                 <div class="cartContainer">
-                    <img src="../deporte-urbano-main/assets/cart.svg" alt="Carrito de Compras">
+                    <img src="../assets/cart.svg" alt="Carrito de Compras">
                 </div>
             </nav>
         </header>
         <main>
             <section class="seccionmensaje">
                 <h1>¿Querés saber más de Deporte Urbano, hacer una sugerencia o iniciar un reclamo?</h1>
-                <p>Escribinos, y con gusto nos pondremos en contacto con usted!</p>
+                <p class="mensaje">Escribinos, y con gusto nos pondremos en contacto con usted!</p>
             </section>
             <section class="seccionformulario">
                 <div class="contacto">
-                    <h1>Contacto</h1>
+                    <h2>Contacto</h2>
                     <p class="telefono">Teléfono: 123-456-7890</p>
                     <br>
                     <p class="mail">Email: contacto@deporteurbano.com</p>
                 </div>
                 <div class="formulario">
-                    <h2>Complete el formulario:</h2>
+                    <h3>Complete el formulario</h3>
                     <form id="contactForm" onsubmit="return validarFormulario()">
                         <div class="field-container">
                             <label for="nombre">Nombre completo:</label>
@@ -84,10 +84,13 @@
                 </div>                
             </section>
             <aside class="contenedor-imagenes">
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.063548801971!2d-58.51149242514212!3d-34.678345561441795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8df56fb9915%3A0x88195bc67b44ac9b!2sD%C2%B4Urbano%20Deportes!5e0!3m2!1ses-419!2sar!4v1715491970228!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <div class="div img-container">
                     <img src="./imagenes/grupo2.jpeg" alt="mujer">
-                    <img src="./imagenes/equipo.jpeg" alt="equipo">
-                </div> 
+                    <img src="./imagenes/equipo.jpeg" alt="equipo">                   
+                </div>
             </aside>
         </main>
         <footer>
@@ -154,8 +157,6 @@
                         <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
-            
-    
         </footer>
         <address>
             <div>
@@ -190,6 +191,5 @@
                 }
             }
         </script>
-    
     </body>
 </html>
