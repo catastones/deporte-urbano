@@ -4,7 +4,7 @@
 }
 
 body {
-     background-color: #6199cf;
+     background-color: #e6eef8;
       font-family: Arial, Helvetica, sans-serif;
      font-size:  xx-large;
       color:aliceblue;
@@ -15,7 +15,7 @@ body {
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     margin-top: 20px;
+     margin: 30px;
     
      
     
@@ -57,8 +57,7 @@ input {
      height: 60px;
      display: block;
      outline: none; 
-     border-radius: 3%;
-        
+     border-radius: 3%;      
      
      color:aliceblue;
      font-size:  x-large;
