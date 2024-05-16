@@ -13,11 +13,12 @@ body {
 .navContainer {
     width: 100%;
     display: grid;
-    grid-template-columns: auto 80% auto;
+    grid-template-columns: auto 68% auto;
     gap: 5px;
     justify-content: center;
     align-content: center;
     background-color: #6199cf;
+    align-items: center;
 }
 .logo {
     margin-top: 10px;
@@ -26,6 +27,9 @@ body {
 }
 .logoContainer {
     justify-items: center;
+}
+.carousel {
+    margin: 1rem auto;
 }
 .sectionsContainer {
     margin-left: 1rem;
@@ -41,20 +45,25 @@ li {
     text-align: center;
     list-style: none;
     font-family: "Times New Roman", Times, serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
-
-.cartContainer img {
-    margin-top: 15px;
-    width: 30px;
+.cartContainer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-/* Estilos del Home */
+.cartContainer img {
+    width: 25px;
+}
 
 h1 {
     text-align: center;
@@ -75,7 +84,7 @@ h1 {
 }
 
 .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     margin-left: 2rem;
 }
 
@@ -85,57 +94,33 @@ h2 {
 }
 /*Estilos del footer*/
 footer {
-    background-color: #a7d2dd;
-    width: 100%;
-    height: 220px;
-    padding: 20px 100px;
+    margin-top: 0.2rem;
 }
 
-.footer-item-container {
-   display: flex;
-   justify-content: space-evenly;
-   flex-flow: row wrap;
-   align-items: baseline;
-  /* align-content: stretch;*/
-   
-}
-.footer-item{
-   h3{
-       font-size: 16px;
-       text-align: center;
-    }
-
-   ul{
-        list-style: none; 
-   }
-   li{
-        line-height: 0.5;
-   }
-   a {
-       text-decoration: none;
-       cursor: pointer;
-       color: black;
-       font-size: 14px;
-   }
-   
-   a:hover {
-       color: rgb(86, 131, 187);
-   }
-} 
-.fa-brands{
-    font-size: 20px;
-    letter-spacing: 15px;
-    align-content: center;
-}
-.contac-link{
-    font-size: 20px;
+.fa-facebook-f {
+    color: #4267b2;
 }
 
-address{
-   background-color:  #e7f8f8c1;
-   width: 100%;
-   height: 50px;
-   font-style: italic;
-   font-size: small;
-   text-align: center;
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-instagram {
+    color: #fd1d1d;
+}
+
+.fa-linkedin {
+    color: #0a66c2;
+}
+
+.fa-whatsapp {
+    color: #075e54;
+}
+
+.fa-envelope {
+    color: #004f9f;
+}
+
+footer a i:hover {
+    transform: scale(2);
 }
