@@ -157,9 +157,6 @@ h2 {
 p {
     font-size: 1rem;
 }
-/* Media query para dispositivos pequeños */
-@media (max-width: 600px) {
-}
 
 /* Estilos base para el contenedor de imágenes */
 .contenedor-imagenes {
@@ -298,6 +295,8 @@ footer {
 
 footer a i:hover {
     transform: scale(2);
+}
+@media (max-width: 600px) {
 }
 
 @media (max-width: 768px) {
