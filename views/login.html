@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/login_reg.css">
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon"   />
-    <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
-    <title>Login</title>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="../style.css">
+      <link rel="stylesheet" href="../css/login_reg.css">
+      <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
+      <title>Login</title>
+  </head>
 
-<body>
-    <header>
-        <div class="navContainer">
-            <div class="logoContainer">
-                <a href="../index.html" title="Inicio"><img class="logo" src="../assets/logo.png"
-                        alt="Logo de Tienda" /></a>
+  <body>
+      <header>
+          <div class="navContainer">
+              <div class="logoContainer">
+                  <a href="../index.html" title="Inicio"><img class="logo" src="../assets/logo.png" alt="Logo de Tienda"></a>
+              </div>
+              <div class="sectionsContainer">
+                  <ul class="nav-items">
+                      <li class="nav-item"><a href="../views/ropaMujer.html">Ropa para Mujeres</a></li>
+                      <li class="nav-item"><a href="../views/ropaHombre.html">Ropa para Hombres</a></li>
+                      <li class="nav-item"><a href="../views/contact.html">Contacto</a></li>
+                  </ul>
+              </div>
+              <div class="cartContainer">
+                  <div>
+                    <ul>
+                      <li class="nav-item"><a href="../views/login.html">Login</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <img src="../assets/cart.svg" alt="Carrito de Compras">
+                  </div>
+              </div>
+          </div>
+      </header>
+      <main>
+        <div>
+          <div class="Contenedor">
+            <div class="ContenedorForm">
+              <form class="FormClass" onsubmit="submitForm(event)">
+
+                  <div class="formGroup">
+                      <label>Usuario</label>
+                      <input type="text" name="user" id="user">
+                  </div>
+                  <div class="input_error" id="user_error"></div>
+                  <div class="formGroup">
+                      <label>Contraseña</label>
+                      <input type="password" name="pass" id="pass">
+                  </div>
+                  <div class="input_error" id="pass_error"></div>
+                  <!-- <input type="submit" class="btn_submit" value="Iniciar Sesión"> -->
+                  <button id="btn_submit" class="btn_submit" type="submit">Iniciar Sesión</button>
+              </form>
+              <div class="registro">
+                  <a href="../views/registro.html">Registrate</a>
+              </div>
+
             </div>
-            <div class="sectionsContainer">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="../views/ropaMujer.html">Ropa para Mujeres</a></li>
-                    <li class="nav-item"><a href="../views/ropaHombre.html">Ropa para Hombres</a></li>
-                    <li class="nav-item"><a href="../views/contact.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="cartContainer">
-                <div><ul>
-                    <li class="nav-item"><a href="../views/login.html">Login</a></li>
-                </ul>
-                    </div>
-                    <div><img src="../assets/cart.svg" alt="Carrito de Compras" /></div>
-            </div>
+
+
+
+          </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="Contenedor">
-                <div class="ContenedorForm">
-                    <form class="FormClass" onsubmit="submitForm(event)">
-
-                        <div class="formGroup">
-                            <label>Usuario</label>
-                            <input type="text" name="user" id="user">
-                        </div>
-                        <div class="input_error" id="user_error"></div>
-                        <div class="formGroup">
-                            <label>Contraseña</label>
-                            <input type="password" name="pass" id="pass">
-                        </div>
-                        <div class="input_error" id="pass_error"></div>
-                        <!-- <input type="submit" class="btn_submit" value="Iniciar Sesión"> -->
-                        <button id="btn_submit" class="btn_submit" type="submit">Iniciar Sesión</button>
-
-
-
-
-                    </form>
-                    <div class="registro">
-                        <a href="../views/registro.html">Registrate</a>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </section>
-    </main>
-    <footer class="text-center text-dark">
+      </main>
+      <footer class="text-center text-dark">
         <h4>Seguinos en nuestras redes sociales</h4>
         <!-- Grid container -->
         <div class="container">
           <!-- Section: Social media -->
-          <section class="mb-0">
+          <div class="mb-0">
             <!-- Facebook -->
             <a
               class="btn btn-link btn-floating btn-lg text-dark "
@@ -84,10 +82,9 @@
               data-mdb-ripple-color="dark"
               title="Facebook"
               target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-  
+              rel="noopener noreferrer"><i class="fab fa-facebook-f"></i>
+            </a>
+
             <!-- Twitter -->
             <a
               class="btn btn-link btn-floating btn-lg text-dark "
@@ -96,10 +93,9 @@
               data-mdb-ripple-color="dark"
               title="Twitter"
               target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-twitter"></i
-            ></a>
-  
+              rel="noopener noreferrer"><i class="fab fa-twitter"></i>
+            </a>
+
             <!-- Instagram -->
             <a
               class="btn btn-link btn-floating btn-lg text-dark "
@@ -108,10 +104,9 @@
               data-mdb-ripple-color="dark"
               title="Instagram"
               target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-instagram"></i
-            ></a>
-  
+              rel="noopener noreferrer"><i class="fab fa-instagram"></i>
+            </a>
+
             <!-- Linkedin -->
             <a
               class="btn btn-link btn-floating btn-lg text-dark "
@@ -120,25 +115,25 @@
               data-mdb-ripple-color="dark"
               title="Linkedin"
               target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+              rel="noopener noreferrer"><i class="fab fa-linkedin"></i>
+            </a>
             
             <!--WhatsApp-->
             <a
               class="btn btn-link btn-floating btn-lg text-dark "
               href="https://api.whatsapp.com/send?phone=+1155588888"
-              title="WhastApp"
-            ><i class="fa-brands fa-whatsapp"></i><a/>
-  
+              title="WhastApp"><i class="fa-brands fa-whatsapp"></i>
+            </a>
+
             <a 
-            class="btn btn-link btn-floating btn-lg text-dark "
-            href="mailto:deporteurbano@gmail.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            title="Mail"><i class="fa-regular fa-envelope"></i></a>
-  
-  
+              class="btn btn-link btn-floating btn-lg text-dark "
+              href="mailto:deporteurbano@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              title="Mail"><i class="fa-regular fa-envelope"></i>
+            </a>
+
+
             <!-- Github -->
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -147,17 +142,16 @@
               data-mdb-ripple-color="dark"
               title="GitHub"
               target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
+              rel="noopener noreferrer"><i class="fab fa-github"></i>
+            </a>
+          </div>
           <!-- Section: Social media -->
         </div>
       </footer>
-   
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../js/login.js"></script>
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="../js/login.js"></script>
+  </body>
 
 </html>
