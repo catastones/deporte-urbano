@@ -16,57 +16,34 @@ body {
 
 /* Estilos del contenedor del menú de navegación */
 
-.navContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 68% auto;
-    gap: 5px;
+.nav {
+    display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.nav-link {
+    display: block;
+    color: white !important;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+}
+.nav-item:hover {
+    font-weight: bold;
+}
+
+.navbar {
     background-color: #6199cf;
-    align-items: center;
-}
-.logo {
-    margin-top: 10px;
-    align-content: center;
-    width: 130px;
-}
-.logoContainer {
-    justify-items: center;
 }
 
-.sectionsContainer {
-    margin-left: 1rem;
-}
-
-.nav-items {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
-}
-li {
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.8rem;
-    margin-top: 0.5rem;
-}
-a {
-    justify-self: center !important;
-    text-decoration: none;
-    color: white;
-}
-.cartContainer {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.cartContainer img {
-    width: 25px;
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*Estilo del main*/
