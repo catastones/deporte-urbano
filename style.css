@@ -9,8 +9,30 @@
 body {
     background-color: #e6eef8;
 }
+.nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-link {
+    display: block;
+    color: white !important;
+    font-size: 1.5rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+}
+.nav-item:hover {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #6199cf;
+}
 /* Estilos del Nav */
-.navContainer {
+/* .navContainer {
     width: 100%;
     display: grid;
     grid-template-columns: auto 68% auto;
@@ -53,39 +75,45 @@ a {
     text-decoration: none;
     color: white;
 }
-.cartContainer {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.cartContainer img {
-    width: 25px;
+*/
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1 {
     text-align: center;
-    margin: 3rem 0;
+}
+.carousel {
+    margin: 1rem auto;
 }
 
 .destacadosContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
+    margin: auto;
+    min-width: min-content;
 }
 
-.card {
-    width: 500px;
-    height: 250px;
-    justify-content: space-around;
-    margin: 5rem 6rem;
+.sobreNosotros {
+    margin-top: 2rem;
+    width: 90%;
+    margin: auto;
 }
+.sobreNosotros h3 {
+    margin: 2rem;
+    text-align: center;
+}
+.sobreNosotros p {
+    font-size: 1.5rem;
 
-.card:hover {
-    transform: scale(1.1);
-    margin-left: 2rem;
+    text-align: center;
+}
+.card img {
+    height: 300px;
+    object-fit: cover;
 }
 
 h2 {
@@ -123,4 +151,42 @@ footer {
 
 footer a i:hover {
     transform: scale(2);
+}
+
+@media screen and (min-width: 280px) {
+    .destacadosContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "card ";
+        justify-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+    .destacadosContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas: "card  ";
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 912px) {
+}
+@media screen and (min-width: 1024px) {
+    .destacadosContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "card card";
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .destacadosContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "card card card";
+    }
 }
