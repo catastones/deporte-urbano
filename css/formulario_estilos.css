@@ -398,3 +398,48 @@ footer a i:hover {
 }
 @media (min-width: 768px) {
 }
+
+/*Estilo footer*/
+
+/* Estilos generales para el footer */
+.footer {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.titulo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+/* Título de los botones */
+.buttons-title {
+  font-size: 24px; 
+  margin-bottom: 20px; 
+  color: #075d8f; 
+}
+
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #2885bb;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
