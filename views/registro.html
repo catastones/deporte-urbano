@@ -18,30 +18,30 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="../index.html" title="Inicio"><img class="logo" src="../assets/logo.png" alt="Logo de Tienda" /></a>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mr-auto mt-2 mx-auto mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../views/ropaMujer.html">Ropa para Mujeres</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../views/ropaHombre.html">Ropa para Hombres</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../views/contact.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../views/login.html">Login</a>
-                        </li>
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="../assets/logo.png" alt="logo">
+                    </div>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
+                    </div>
+                    <ul class="nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./ropaMujer.html">Ropa de Mujer</a></li>
+                        <li><a href="./ropaHombre.html">Ropa de Hombre</a></li>
+                        <li><a href="./contact.html">Contacto</a></li>
+                        <li><a href="./login.html">Login</a></li>
                     </ul>
-                </div>
+                </div>    
             </nav>
         </header>
+        <script>
+            // Script para el menú hamburguesa
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('.nav').classList.toggle('nav-active');
+            });
+        </script>
         <main>
             <div>
                 <div class="Contenedor">

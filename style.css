@@ -15,30 +15,138 @@ body {
     align-content: center;
 }
 
-.nav-link {
-    display: block;
-    color: white !important;
-    font-size: 1.5rem;
-    margin: 0 3rem;
-}
-.nav-item {
+nav {
+    background: #5680f1;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  nav .container {
     display: flex;
-    justify-content: center;
-}
-.nav-item:hover {
-    font-weight: bold;
-}
-
-.navbar {
-    background-color: #6199cf;
-}
-
-.navbar-center {
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  nav .logo img {
+    height: 50px; 
+    margin-top: 10px;
+  }
+  
+  nav .menu-toggle {
+    display: none; 
+    font-size: 24px; 
+    color: #fff; 
+    cursor: pointer; 
+    margin-top: 5px;
+  }
+  
+  nav .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav .nav li {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  
+  nav .nav a {
+    padding: .5em .8em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    transition: all .35s ease;
+  }
+  
+  nav .nav a::before,
+  nav .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  nav .nav a::before {
+    right: 0;
+    top: 0;
+    border-top: 3px solid #1fcfcf;
+    border-right: 3px solid #51f5f5;
+    transform: translate(-100%, 50%);
+  }
+  
+  nav .nav a::after {
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #1fcfcf;
+    border-left: 3px solid #51f5f5;
+    transform: translate(100%, -50%);
+  }
+  
+  nav .nav a:hover:before,
+  nav .nav a:hover:after {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  nav .nav a:hover {
+    color: hsl(182, 96%, 68%);
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    nav .container {
+      flex-direction: row; 
+      justify-content: space-between; 
+      padding: 0 20px; 
+    }
+  
+    nav .menu-toggle {
+      display: block;
+      margin-left: auto;
+    }
+  
+    nav .nav {
+      display: none; 
+      flex-direction: column; 
+      width: 100%; 
+      text-align: center; 
+      background: #5680f1; 
+      position: absolute; 
+      top: 100%;
+      left: 0; 
+      z-index: 1000;
+      padding: 15px 0; 
+    }
+  
+    nav .nav.nav-active {
+      display: flex; 
+    }
+  
+    nav .nav li {
+      margin: 10px 0; 
+    }
+    
+    nav .nav a {
+      padding: .5em .8em;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      transition: all .35s ease;
+    }
+  }
 h1 {
     text-align: center;
 }
