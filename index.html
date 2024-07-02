@@ -2,89 +2,103 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./style.css" />
-        <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
-        <title>Sports</title>
-    </head>
-    <body>
-        
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <img src="../assets/logo.png" alt="logo">
-                    </div>
-                    <div class="menu-toggle">
-                        <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
-                    </div>
-                    <ul class="nav">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./views/ropaMujer.html">Ropa de Mujer</a></li>
-                        <li><a href="./views/ropaHombre.html">Ropa de Hombre</a></li>
-                        <li><a href="./views/contact.html">Contacto</a></li>
-                        <li><a href="./views/login.html">Login</a></li>
-                    </ul>
-                </div>    
-            </nav>
-        </header>
-        <script>
-            // Script para el menú hamburguesa
-            document.querySelector('.menu-toggle').addEventListener('click', () => {
-                document.querySelector('.nav').classList.toggle('nav-active');
-            });
-        </script>
-        <main>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <title>Sports</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="logo">
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../assets/imagen1.jpg" class="d-block w-50 mx-auto" alt="Imagen 1" />
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="20000">
-                        <img src="../assets/imagen2.jpg" class="d-block w-50 mx-auto" alt="..." />
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="30000">
-                        <img src="../assets/imagen3.jpg" class="d-block w-50 mx-auto" alt="..." />
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <ul class="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./views/ropaMujer.html">Ropa de Mujer</a></li>
+                    <li><a href="./views/ropaHombre.html">Ropa de Hombre</a></li>
+                    <li><a href="./views/crudProductos.html">Crud</a></li>
+                    <li><a href="./views/contact.html">Contacto</a></li>
+                    <li><a href="./views/login.html">Login</a></li>
+                </ul>
             </div>
-            <div class="sobreNosotros">
-                <h3>Quienes somos:</h3>
-                <p>Somos una tienda online de venta de ropa deportiva, te invitamos a navegar por las diferentes secciones para conocer mas de nuestros productos.</p>
-                <p>Esperamos que sean de su agrado y por cualquier consulta nos pueden consultar desde la sección de Contactos o visitando nuestras redes sociales</p>
+        </nav>
+    </header>
+    <script>
+        // Script para el menú hamburguesa
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('nav-active');
+        });
+    </script>
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </main>
-        <footer>
-            <div class="titulo">
-                <h3 class="buttons-title">Conéctate con nosotros</h3>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../assets/imagen1.jpg" class="d-block w-50 mx-auto" alt="Imagen 1" />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <img src="../assets/imagen2.jpg" class="d-block w-50 mx-auto" alt="..." />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="30000">
+                    <img src="../assets/imagen3.jpg" class="d-block w-50 mx-auto" alt="..." />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google-plus"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </footer>
-    </body>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="sobreNosotros">
+            <h3>Quienes somos:</h3>
+            <p>Somos una tienda online de venta de ropa deportiva, te invitamos a navegar por las diferentes secciones
+                para conocer mas de nuestros productos.</p>
+            <p>Esperamos que sean de su agrado y por cualquier consulta nos pueden consultar desde la sección de
+                Contactos o visitando nuestras redes sociales</p>
+        </div>
+    </main>
+    <footer>
+        <div class="titulo">
+            <h3 class="buttons-title">Conéctate con nosotros</h3>
+        </div>
+        <div class="buttons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+    <script src="./js/fechModule.js"></script>
+
+</body>
+
 </html>

@@ -2,78 +2,81 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/login_reg.css">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
-        <title>Login</title>
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <img src="../assets/logo.png" alt="logo">
-                    </div>
-                    <div class="menu-toggle">
-                        <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
-                    </div>
-                    <ul class="nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./ropaMujer.html">Ropa de Mujer</a></li>
-                        <li><a href="./ropaHombre.html">Ropa de Hombre</a></li>
-                        <li><a href="./contact.html">Contacto</a></li>
-                        <li><a href="./login.html">Login</a></li>
-                    </ul>
-                </div>    
-            </nav>
-        </header>
-        <script>
-            // Script para el menú hamburguesa
-            document.querySelector('.menu-toggle').addEventListener('click', () => {
-                document.querySelector('.nav').classList.toggle('nav-active');
-            });
-        </script>
-       <main>
-            <div>
-                <div class="Contenedor">
-                    <div class="ContenedorForm">
-                        <form class="FormClass" onsubmit="submitForm(event)">
-                            <div class="formGroup">
-                                <label for="user">Usuario</label>
-                                <input type="text" name="user" id="user" />
-                            </div>
-                            <div class="input_error" id="user_error"></div>
-                            <div class="formGroup">
-                                <label for="pass">Contraseña</label>
-                                <input type="password" name="pass" id="pass" />
-                            </div>
-                            <div class="input_error" id="pass_error"></div>
-                            <!-- <input type="submit" class="btn_submit" value="Iniciar Sesión"> -->
-                            <button id="btn_submit" class="btn_submit" type="submit">Iniciar Sesión</button>
-                        </form>
-                        <div class="registro">
-                            <a href="../views/registro.html">Registrate</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login_reg.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="logo">
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
+                </div>
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./ropaMujer.html">Ropa de Mujer</a></li>
+                    <li><a href="./ropaHombre.html">Ropa de Hombre</a></li>
+                    <li><a href="./crudProductos.html">Crud</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+        // Script para el menú hamburguesa
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav').classList.toggle('nav-active');
+        });
+    </script>
+    <main>
+        <div>
+            <div class="ContenedorLogin">
+                <div class="ContenedorForm">
+                    <form class="FormClass" onsubmit="submitForm(event)">
+                        <div class="formGroup">
+                            <label for="user">Usuario</label>
+                            <input type="text" name="user" id="user" />
                         </div>
+                        <div class="input_error" id="user_error"></div>
+                        <div class="formGroup">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="pass" />
+                        </div>
+                        <div class="input_error" id="pass_error"></div>
+                        <!-- <input type="submit" class="btn_submit" value="Iniciar Sesión"> -->
+                        <button id="btn_submit" class="btn_submit" type="submit">Iniciar Sesión</button>
+                    </form>
+                    <div class="registro">
+                        <a href="../views/registro.html">Registrate</a>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="titulo">
-                <h3 class="buttons-title">Conéctate con nosotros</h3>
-            </div>
-            <div class="buttons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google-plus"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="titulo">
+            <h3 class="buttons-title">Conéctate con nosotros</h3>
+        </div>
+        <div class="buttons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+</body>
+
 </html>

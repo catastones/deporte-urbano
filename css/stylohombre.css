@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
 /* Estilo del Nav */
 nav {
   background: #5680f1;
@@ -29,15 +30,15 @@ nav .container {
 }
 
 nav .logo img {
-  height: 50px; 
+  height: 50px;
   margin-top: 10px;
 }
 
 nav .menu-toggle {
-  display: none; 
-  font-size: 24px; 
-  color: #fff; 
-  cursor: pointer; 
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
   margin-top: 5px;
 }
 
@@ -93,7 +94,7 @@ nav .nav a::after {
 
 nav .nav a:hover:before,
 nav .nav a:hover:after {
-  transform: translate(0,0);
+  transform: translate(0, 0);
   opacity: 1;
 }
 
@@ -104,9 +105,9 @@ nav .nav a:hover {
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   nav .container {
-    flex-direction: row; 
-    justify-content: space-between; 
-    padding: 0 20px; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
   }
 
   nav .menu-toggle {
@@ -115,26 +116,26 @@ nav .nav a:hover {
   }
 
   nav .nav {
-    display: none; 
-    flex-direction: column; 
-    width: 100%; 
-    text-align: center; 
-    background: #5680f1; 
-    position: absolute; 
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: #5680f1;
+    position: absolute;
     top: 100%;
-    left: 0; 
+    left: 0;
     z-index: 1000;
-    padding: 15px 0; 
+    padding: 15px 0;
   }
 
   nav .nav.nav-active {
-    display: flex; 
+    display: flex;
   }
 
   nav .nav li {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
-  
+
   nav .nav a {
     padding: .5em .8em;
     color: #ffffff;
@@ -147,6 +148,7 @@ nav .nav a:hover {
     transition: all .35s ease;
   }
 }
+
 /*Estilos de las tarjetas*/
 
 main {
@@ -190,9 +192,9 @@ h2 {
 }
 
 .grid-container .card .card-image {
-  position:relative;
+  position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
   border-radius: 20px;
   display: flex;
@@ -203,8 +205,8 @@ h2 {
 
 .grid-container .card .card-image img {
   width: 100%;
-  height: 100%; 
-  object-fit:fill; 
+  height: 100%;
+  object-fit: fill;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -213,7 +215,7 @@ h2 {
 }
 
 .grid-container .card .card-content {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -236,8 +238,9 @@ h2 {
 }
 
 .grid-container .card .card-content p {
-  font-size: 16px; 
+  font-size: 16px;
 }
+
 .grid-container .card .card-content p .after-br {
   display: block;
   font-size: 18px;
@@ -253,30 +256,53 @@ h2 {
   opacity: 1;
 }
 
+.card_buttons {
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card_buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 35px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #2885bb;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
 /*Estilo footer*/
 
 /* Estilos generales para el footer */
 .footer {
-  text-align: center; 
-  padding: 20px; 
+  text-align: center;
+  padding: 20px;
 }
 
 .titulo {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
+
 /* Título de los botones */
 .buttons-title {
-  font-size: 24px; 
-  margin-bottom: 20px; 
-  color: #075d8f; 
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #075d8f;
 }
 
 .buttons {
   min-width: 300px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 20px;
 }
 

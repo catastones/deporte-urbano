@@ -1,0 +1,176 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylohombre.css">
+    <script src="https://kit.fontawesome.com/bc63c3042f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/login_reg.css">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <title>Sports</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="logo">
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i> <!-- Ícono de barras para el botón de menú -->
+                </div>
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./ropaMujer.html">Ropa de Mujer</a></li>
+                    <li><a href="./ropaHombre.html">Ropa de Hombre</a></li>
+                    <li><a href="./crudProductos.html">Crud</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            // Script para el menú hamburguesa
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('.nav').classList.toggle('nav-active');
+            });
+        </script>
+    </header>
+    <main>
+        <h2>Administrador de Productos</h2>
+        <div class="grid-container">
+            <div class="buttons">
+                <a href="#formProducto" onclick='newProducto("new")'><i class="fa-solid fa-square-plus"></i></a>
+            </div>
+        </div>
+        <div class="grid-container" id="cardContainer">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/conjx6.jpg" alt="Imagen 1">
+                </div>
+                <div class="card-content">
+                    <h3>Conjunto x6</h3>
+                    <p>Este conjunto viene con pantalon termico, shorts, remera manga corta termica, remera manga larga
+                        termica, y buzo canguro termico.<br><span class="after-br">Precio promocional $ 335.000</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/im2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="card-content">
+                    <h3>Conjunto Urbano Grey</h3>
+                    <p>El conjunto está compuesto por un buzo canguro y un pantalón de gimnasia de color negro con una
+                        franja blanca en el costado.<br><span class="after-br">Precio promocional $ 55.000</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/im5.jpg" alt="Imagen 3">
+                </div>
+                <div class="card-content">
+                    <h3>Conjunto Urbano Night</h3>
+                    <p>Este conjunto viene con un short y campera rompevientos.<br><span class="after-br"> promocional $
+                            149.000</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/im6.jpg" alt="Imagen 4">
+                </div>
+                <div class="card-content">
+                    <h3>Conjunto Urbano summer</h3>
+                    <p>El conjunto viene con una remra de algodon y shorts super comodos.<br><span
+                            class="after-br">Precio promocional $ 151.000</span> </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <section id="formProducto">
+                <div class="Contenedor" id="contenedor">
+                    <div class="ContenedorForm">
+                        <input type="hidden" name="id" id="id" />
+                        <form class="FormClass" onsubmit="submitForm(event)">
+                            <div class="formGroup">
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="input_error" id="name_error"></div>
+                            <div class="formGroup">
+                                <label for="descripcion">Descripción</label>
+                                <textarea type="area" name="descripcion" id="descripcion"></textarea>
+                            </div>
+                            <div class="input_error" id="lastname_error"></div>
+                            <div class="formGroup" id="div_talle">
+                                <label for="talle">Talle</label>
+                                <!-- <input type="text" name="user" id="user" /> -->
+                                <select name="talle" id="selectTalle">
+                                    <!-- <option value="value1">Value 1</option>
+                                            <option value="value2" selected>Value 2</option>
+                                            <option value="value3">Value 3</option> -->
+                                </select>
+                            </div>
+
+                            <div class="formGroup" id="div_color">
+                                <label for="color">Color</label>
+                                <select name="color" id="selectColor">
+                                </select>
+                            </div>
+                            <div class="formGroup" id="div_genero">
+                                <label for="genero">Genero</label>
+                                <select name="genero" id="selectGenero">
+                                </select>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="precio">Precio</label>
+                                <input type="number" name="precio" id="precio" />
+                            </div>
+                            <div class="formGroup">
+                                <label for="urlImagen">URL Imagen</label>
+                                <input type="text" name="urlImagen" id="urlImagen" />
+                            </div>
+
+
+                            <button id="btn_reg" class="btn_submit" type="submit">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="titulo">
+            <h3 class="buttons-title">Conéctate con nosotros</h3>
+        </div>
+        <div class="buttons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+
+    <script src="../js/controllerCrud.js"></script>
+    <!-- <script>
+        function eliminarProducto(id) {
+            if (confirm(`¿Estas seguro de eliminar el producto ${id}?`)) {
+                // Save it!
+                console.log('Thing was saved to the database.');
+            } else {
+                // Do nothing!
+                console.log('Thing was not saved to the database.');
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
